@@ -1,24 +1,404 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GWE-zT-2KK">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Profile-->
+        <scene sceneID="lwd-6M-fvY">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="YVp-yL-q0W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1FE-7L-rcp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-50" translatesAutoresizingMaskIntoConstraints="NO" id="HOp-xb-w51">
+                                <rect key="frame" x="10" y="59" width="373" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WE7-7e-VMc">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cool superhero" translatesAutoresizingMaskIntoConstraints="NO" id="PTP-PX-ZOm">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="Wlg-KW-3J8"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOl-nc-G8b">
+                                        <rect key="frame" x="0.0" y="150" width="373" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiro Hamada" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XB-X3-nuW">
+                                                <rect key="frame" x="0.0" y="0.0" width="223" height="150"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle Photo" translatesAutoresizingMaskIntoConstraints="NO" id="bFo-Oj-eX9">
+                                                <rect key="frame" x="223" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="R4g-v0-WVm"/>
+                                                    <constraint firstAttribute="height" constant="150" id="bog-3L-ww2"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="0bF-ce-G2J">
+                                <rect key="frame" x="10" y="359" width="373" height="132.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator of Microbots" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j5-7u-85o">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.66666666666666" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Fransokyo Institute of Technology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpl-2f-pky">
+                                        <rect key="frame" x="0.0" y="37.333333333333314" width="290" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI, Math, Science, Engineering, Technology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmA-4S-ZLx">
+                                        <rect key="frame" x="0.0" y="74.666666666666686" width="328.33333333333331" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robotics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZl-aF-eJh">
+                                        <rect key="frame" x="0.0" y="112" width="67" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EU0-T2-EV0">
+                                <rect key="frame" x="10" y="501.33333333333326" width="373" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle Photo" translatesAutoresizingMaskIntoConstraints="NO" id="Ln9-1E-Y4e">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="IR1-eD-MuU"/>
+                                            <constraint firstAttribute="height" constant="50" id="Klb-F3-R5J"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2sH-ib-I6K">
+                                        <rect key="frame" x="50" y="0.0" width="323" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Hiro Hamada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCx-wp-xaZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="35.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 20, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZW-uG-SpH">
+                                                <rect key="frame" x="0.0" y="35.666666666666686" width="323" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="oc0-fy-FYF">
+                                <rect key="frame" x="10" y="556.33333333333337" width="373" height="227.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Best Friend 🤍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-e8-OKy">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Big Hug" translatesAutoresizingMaskIntoConstraints="NO" id="XBQ-hZ-24R">
+                                        <rect key="frame" x="0.0" y="27.333333333333258" width="373" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="4HI-JI-V8G"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pF5-n6-rln"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HOp-xb-w51" firstAttribute="leading" secondItem="pF5-n6-rln" secondAttribute="leading" constant="10" id="0lK-0d-1Zy"/>
+                            <constraint firstItem="pF5-n6-rln" firstAttribute="trailing" secondItem="EU0-T2-EV0" secondAttribute="trailing" constant="10" id="26g-3f-L7q"/>
+                            <constraint firstItem="EU0-T2-EV0" firstAttribute="leading" secondItem="pF5-n6-rln" secondAttribute="leading" constant="10" id="7IT-c7-R4k"/>
+                            <constraint firstItem="EU0-T2-EV0" firstAttribute="top" secondItem="0bF-ce-G2J" secondAttribute="bottom" constant="10" id="CYu-Nw-zEM"/>
+                            <constraint firstItem="oc0-fy-FYF" firstAttribute="leading" secondItem="pF5-n6-rln" secondAttribute="leading" constant="10" id="Ex0-V0-xGF"/>
+                            <constraint firstItem="pF5-n6-rln" firstAttribute="trailing" secondItem="HOp-xb-w51" secondAttribute="trailing" constant="10" id="MI4-T4-txN"/>
+                            <constraint firstItem="0bF-ce-G2J" firstAttribute="top" secondItem="HOp-xb-w51" secondAttribute="bottom" id="Ndf-6d-gnn"/>
+                            <constraint firstItem="0bF-ce-G2J" firstAttribute="leading" secondItem="pF5-n6-rln" secondAttribute="leading" constant="10" id="YIh-Or-C8p"/>
+                            <constraint firstItem="HOp-xb-w51" firstAttribute="top" secondItem="pF5-n6-rln" secondAttribute="top" id="cnK-ZO-ATQ"/>
+                            <constraint firstItem="pF5-n6-rln" firstAttribute="trailing" secondItem="oc0-fy-FYF" secondAttribute="trailing" constant="10" id="lEL-0P-Zn5"/>
+                            <constraint firstItem="pF5-n6-rln" firstAttribute="trailing" secondItem="0bF-ce-G2J" secondAttribute="trailing" constant="10" id="nbo-Ls-WwJ"/>
+                            <constraint firstItem="oc0-fy-FYF" firstAttribute="top" secondItem="EU0-T2-EV0" secondAttribute="bottom" constant="5" id="uea-5h-OWx"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="ugg-CK-RgL"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBF-G3-DFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-827" y="1554"/>
+        </scene>
+        <!--Posts-->
+        <scene sceneID="ysl-zZ-8rM">
+            <objects>
+                <viewController id="Bsj-YX-Gi5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K4M-L7-aVS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o28-E1-Ma3">
+                                <rect key="frame" x="10" y="59" width="373" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle Photo" translatesAutoresizingMaskIntoConstraints="NO" id="Rth-Y6-RW1">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="VFx-ab-6Kr"/>
+                                            <constraint firstAttribute="height" constant="50" id="c2W-1u-eIR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-Le-S9m">
+                                        <rect key="frame" x="50" y="0.0" width="323" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Hiro Hamada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi6-Pm-efE">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="35.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 23, 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZU-d5-I8Z">
+                                                <rect key="frame" x="0.0" y="35.666666666666671" width="323" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="rU0-fk-08A">
+                                <rect key="frame" x="10" y="114.00000000000001" width="373" height="198.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baymax appreciation post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XE-FU-QdA">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8ej-BL-i9e">
+                                        <rect key="frame" x="0.0" y="33.333333333333343" width="373" height="165"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baymax and cat" translatesAutoresizingMaskIntoConstraints="NO" id="lsh-2M-jFb">
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="165"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="225" id="261-Ni-PhS"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="m5q-5U-rOs"/>
+                                                    <constraint firstAttribute="width" constant="225" id="yDp-tF-6hb"/>
+                                                    <constraint firstAttribute="height" constant="165" id="yad-JR-N7N"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0RL-gV-nyS">
+                                                <rect key="frame" x="226" y="0.0" width="147" height="165"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tape" translatesAutoresizingMaskIntoConstraints="NO" id="dDg-HG-eaA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="82"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cute hug" translatesAutoresizingMaskIntoConstraints="NO" id="o44-kw-UKH">
+                                                        <rect key="frame" x="0.0" y="83" width="147" height="82"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S45-Ca-Vrz">
+                                <rect key="frame" x="10" y="332.33333333333331" width="373" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle Photo" translatesAutoresizingMaskIntoConstraints="NO" id="Bna-j9-IgW">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="G6H-3I-S9U"/>
+                                            <constraint firstAttribute="width" constant="50" id="VCL-mc-gcK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yKb-C7-SsB">
+                                        <rect key="frame" x="50" y="0.0" width="323" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Hiro Hamada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKv-YP-aeG">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="35.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July 29, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKh-3p-ezm">
+                                                <rect key="frame" x="0.0" y="35.666666666666686" width="323" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Been missing Tadashi a lot lately..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8F7-cA-Xwa">
+                                <rect key="frame" x="10" y="387.33333333333331" width="373" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Is-We-tVB">
+                                <rect key="frame" x="10" y="427.66666666666669" width="373" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle Photo" translatesAutoresizingMaskIntoConstraints="NO" id="E4d-pg-Zkr">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="ud6-el-xGD"/>
+                                            <constraint firstAttribute="height" constant="50" id="vgK-Ub-0i3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dsb-Fm-d2W">
+                                        <rect key="frame" x="50" y="0.0" width="323" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Hiro Hamada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIm-Cd-TyI">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="35.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April 8, 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tq6-A7-BNc">
+                                                <rect key="frame" x="0.0" y="35.666666666666629" width="323" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="THd-qD-T56">
+                                <rect key="frame" x="10" y="482.66666666666669" width="373" height="227.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUPERHERO SQUAD! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n9-x9-QM0">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gang" translatesAutoresizingMaskIntoConstraints="NO" id="PYo-D6-whV">
+                                        <rect key="frame" x="0.0" y="27.333333333333314" width="373" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="eWE-SO-mFd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtD-Xy-gUc">
+                                <rect key="frame" x="10" y="730" width="373" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle Photo" translatesAutoresizingMaskIntoConstraints="NO" id="4fJ-CT-tKe">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="91d-ZL-Thd"/>
+                                            <constraint firstAttribute="width" constant="50" id="Z8o-c8-s7h"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MFR-Xb-Pc9">
+                                        <rect key="frame" x="50" y="0.0" width="323" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Hiro Hamada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-Xj-c1g">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="35.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November 19, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4V-tS-z0z">
+                                                <rect key="frame" x="0.0" y="35.666666666666629" width="323" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TV8-rV-iyn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o28-E1-Ma3" firstAttribute="leading" secondItem="TV8-rV-iyn" secondAttribute="leading" constant="10" id="131-hO-Lvw"/>
+                            <constraint firstItem="rU0-fk-08A" firstAttribute="leading" secondItem="TV8-rV-iyn" secondAttribute="leading" constant="10" id="4oN-BE-5Rm"/>
+                            <constraint firstItem="TV8-rV-iyn" firstAttribute="trailing" secondItem="8F7-cA-Xwa" secondAttribute="trailing" constant="10" id="6Op-J4-PAD"/>
+                            <constraint firstItem="S45-Ca-Vrz" firstAttribute="top" secondItem="rU0-fk-08A" secondAttribute="bottom" constant="20" id="7yH-LM-hUA"/>
+                            <constraint firstItem="5Is-We-tVB" firstAttribute="top" secondItem="8F7-cA-Xwa" secondAttribute="bottom" constant="20" id="D21-b5-pGz"/>
+                            <constraint firstAttribute="trailing" secondItem="EtD-Xy-gUc" secondAttribute="trailing" constant="10" id="Hjz-Um-RF9"/>
+                            <constraint firstItem="8F7-cA-Xwa" firstAttribute="leading" secondItem="TV8-rV-iyn" secondAttribute="leading" constant="10" id="Krc-du-xyw"/>
+                            <constraint firstItem="THd-qD-T56" firstAttribute="leading" secondItem="K4M-L7-aVS" secondAttribute="leading" constant="10" id="WU6-O3-UG2"/>
+                            <constraint firstItem="THd-qD-T56" firstAttribute="top" secondItem="5Is-We-tVB" secondAttribute="bottom" constant="5" id="Xqm-wE-kFW"/>
+                            <constraint firstItem="THd-qD-T56" firstAttribute="top" secondItem="5Is-We-tVB" secondAttribute="bottom" constant="5" id="YFs-kx-VSc"/>
+                            <constraint firstItem="TV8-rV-iyn" firstAttribute="trailing" secondItem="o28-E1-Ma3" secondAttribute="trailing" constant="10" id="YRY-tg-IkA"/>
+                            <constraint firstItem="rU0-fk-08A" firstAttribute="top" secondItem="o28-E1-Ma3" secondAttribute="bottom" constant="5" id="Ycw-xv-jnT"/>
+                            <constraint firstItem="5Is-We-tVB" firstAttribute="leading" secondItem="K4M-L7-aVS" secondAttribute="leading" constant="10" id="Z3D-Ys-bDh"/>
+                            <constraint firstItem="TV8-rV-iyn" firstAttribute="trailing" secondItem="5Is-We-tVB" secondAttribute="trailing" constant="10" id="fiE-aL-Vhq"/>
+                            <constraint firstItem="8F7-cA-Xwa" firstAttribute="top" secondItem="S45-Ca-Vrz" secondAttribute="bottom" constant="5" id="gdo-tX-Pue"/>
+                            <constraint firstItem="o28-E1-Ma3" firstAttribute="top" secondItem="TV8-rV-iyn" secondAttribute="top" id="hAU-Ji-jBH"/>
+                            <constraint firstItem="o28-E1-Ma3" firstAttribute="top" secondItem="TV8-rV-iyn" secondAttribute="top" id="ivq-i9-1kr"/>
+                            <constraint firstItem="S45-Ca-Vrz" firstAttribute="leading" secondItem="TV8-rV-iyn" secondAttribute="leading" constant="10" id="lMC-E0-Eg2"/>
+                            <constraint firstItem="EtD-Xy-gUc" firstAttribute="top" secondItem="THd-qD-T56" secondAttribute="bottom" constant="20" id="nyf-eB-2zw"/>
+                            <constraint firstItem="EtD-Xy-gUc" firstAttribute="leading" secondItem="K4M-L7-aVS" secondAttribute="leading" constant="10" id="wIH-75-rxG"/>
+                            <constraint firstItem="TV8-rV-iyn" firstAttribute="trailing" secondItem="THd-qD-T56" secondAttribute="trailing" constant="10" id="xbR-CP-qHp"/>
+                            <constraint firstItem="TV8-rV-iyn" firstAttribute="trailing" secondItem="S45-Ca-Vrz" secondAttribute="trailing" constant="10" id="yEE-De-cbg"/>
+                            <constraint firstAttribute="trailing" secondItem="rU0-fk-08A" secondAttribute="trailing" constant="10" id="yH3-gB-BZu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Posts" image="signpost.left" catalog="system" id="rnT-Ob-WUz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Gv-1b-RoS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="1554"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MVo-tm-BSo">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GWE-zT-2KK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XHv-x9-DD3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YVp-yL-q0W" kind="relationship" relationship="viewControllers" id="Vtp-a2-PKB"/>
+                        <segue destination="Bsj-YX-Gi5" kind="relationship" relationship="viewControllers" id="KnN-x2-4qm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ceg-dA-pVX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="827"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Baymax and cat" width="296" height="170"/>
+        <image name="Big Hug" width="1080" height="452"/>
+        <image name="Circle Photo" width="1029" height="1000"/>
+        <image name="cool superhero" width="300" height="168"/>
+        <image name="cute hug" width="301" height="168"/>
+        <image name="gang" width="259" height="194"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="signpost.left" catalog="system" width="128" height="121"/>
+        <image name="tape" width="346" height="146"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
